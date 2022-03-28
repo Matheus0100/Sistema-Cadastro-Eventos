@@ -1,9 +1,8 @@
-var emailusuario = ["agomes@gmail.com"]
-var senhausuario = 123456
 var anoatual = 2022
+var participantes = ["João","Maria","Rodrigo","Mário","Matheus","João","Maria","Rodrigo","Mário","Matheus","João","Maria","Rodrigo","Mário","Matheus","João","Maria","Rodrigo","Mário","Matheus","João","Maria","Rodrigo","Mário","Matheus","João","Maria","Rodrigo","Mário","Matheus","João","Maria","Rodrigo","Mário","Matheus","João","Maria","Rodrigo","Mário","Matheus","João","Maria","Rodrigo","Mário","Matheus"]
 
 var entradausuario = "agomes@gmail.com"
-var entradasenha = 123456
+var entradasenha = "abc123456"
 var anousuario = 2004
 let idade = anoatual-anousuario
 //Nesta parte eu queria inserir um input para coletar a resposta do usuário,
@@ -11,11 +10,18 @@ let idade = anoatual-anousuario
 
 if (idade<=17){
    console.log("Não é permitido menores de 18 anos")
+} 
+
+ else if (entradasenha.length < 8){
+  console.log("A senha deve ter no mínimo 8 caracteres.")
+}
+ else{
+  console.log("Verificando a existência de vagas...")
 }
 
-    if (emailusuario==entradausuario && senhausuario==entradasenha){
-   console.log("Login efetuado com sucesso")
+    if (participantes.length <= 200){
+   console.log("Cadastro efetuado com sucesso!")
 }
     else {
-   console.log("Email ou senha incorretos")
+   console.log("Não há vagas para este evento.")
 }
